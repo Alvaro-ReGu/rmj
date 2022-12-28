@@ -4,7 +4,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: white;
     font-family: "Open Sans", "sans-serif ";
 }
 
@@ -17,6 +16,7 @@ li, a {
     color: black;
     text-decoration: none;
 }
+
 
 
 header{
@@ -32,6 +32,57 @@ header{
     border-color: #483519;
 }
 
+.menubt{
+    display: none;
+}
+
+.selected {
+    padding: 10px;
+    color: #483519;
+    font-size: 20px;
+    border-color: #6F7C12;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: white;
+ }
+
+.selected:hover{
+    background-color: #6F7C12;
+
+    border-color: #E77728;
+    border-radius: 5px;
+}
+
+@media (max-width: 480px) {
+    .nav__links__left{
+        display: none;
+        position: absolute;
+        top: 95px;
+        width: 294px;
+        right: 0;
+        background-color: #483519;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+
+        padding: 0px;
+        padding-bottom: 10px;
+        border-radius: 5px;
+    }
+
+    .selected{
+        padding-top: 1px;
+        padding-bottom: 1px;
+    }
+
+    .menubt{
+        display: block;
+    }
+
+    .header:hover .nav__links__left{
+        display: block;
+    }
+}
+
 .logo {
     padding-right: 25%;
     padding-top: 1px;
@@ -42,9 +93,7 @@ header{
     height: 70px;
     width: auto;
 }
-
-
-
+  
 .nav__links__left li {
     display: inline-block;
     padding: 5px 15px;
@@ -58,22 +107,6 @@ header{
 .nav__links__left li a:hover {
     color: #14245c
 
-}
-
-.selected {
-    padding: 10px;
-    color: #483519;
-    font-size: 20px;
-    border-color: #6F7C12;
-    border-style: solid;
-    border-radius: 5px;
- }
-
-.selected:hover{
-    background-color: #6F7C12;
-
-    border-color: #E77728;
-    border-radius: 5px;
 }
 
 .title{
@@ -150,7 +183,31 @@ span {
     height: auto;
 }
 
+@media (max-width: 480px){
+    .Text {
+        font-size: 20px;
+        color: #14245c;
+    }
+    
+    .grid-sq{
+        padding: 5px;
+    }
 
+    #grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
 
+    .ima{
+        width: 75%;
+        height: auto;
+    }
 
+    .BBB {
+        position: relative;
+        top: 0%;
+    }
 
+    .number{
+        position: inherit;
+    }
+}
