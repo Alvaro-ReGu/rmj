@@ -31,10 +31,6 @@ header{
     border-color: #483519;
 }
 
-.menubt{
-    display: none;
-}
-
 .logo {
     padding-right: 25%;
     padding-top: 1px;
@@ -79,7 +75,6 @@ header{
     border-radius: 5px;
 }
 
-
 .ttext{
     display: flex;
     justify-content: center;
@@ -94,7 +89,34 @@ span {
     border-bottom-right-radius: 10px;
 }
 
+.span2{
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.description{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-size: 24px;
+    color: #14245c;
+}
+
+.description2{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    color: #14245c;
+    font-size: 24px;
+}
+
 .Text {
+    font-size: 20px;
+    color: #14245c;
+    text-align: left;
+}
+
+.elem{
     font-size: 20px;
     color: #14245c;
 }
@@ -104,25 +126,25 @@ span {
 }
 
 #grid{
-    padding-top: 15vh;
+    padding-top: 1vh;
     text-align: center;
     margin: auto;
 
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     row-gap: 50px;
     justify-items: center;
 }
 
-.lement{
-    padding-bottom: 20px;
-    font-size: 32px;
-    color: #14245c;
+.clean{
+    display: flex;
+    justify-content: center;
+    margin: auto;
     
-    text-decoration: underline;
-    text-decoration-color: #6F7C12;
-    text-decoration-thickness: 3px;
+    width: 30%;
+    height: auto;
 }
+
 
 .number {
     font-size: 24px;
@@ -142,18 +164,22 @@ span {
     height: auto;
 }
 
-@media (max-width: 480px) {
-    .Text {
-        font-size: 2.75vw;
-        color: #14245c;
+.menubt{
+    display: none;
+}
+
+@media (max-width: 480px){
+    .clean{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        
+        width: 75%;
+        height: auto;
     }
-    
-    #grid{
-        padding-top: 1vh;
-    }
-    
-    .lement{
-        font-size: 2.75vh;
+
+    .number {
+        position: inherit;
     }
 
     .nav__links__left{
@@ -184,11 +210,15 @@ span {
     .header:hover .nav__links__left{
         display: block;
     }
-    
-    .number{
-        position: inherent;
+
+    .elem{
+        font-size: 16px;
     }
 }
+
+
+
+
 
 
 

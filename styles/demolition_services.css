@@ -31,10 +31,6 @@ header{
     border-color: #483519;
 }
 
-.menubt{
-    display: none;
-}
-
 .logo {
     padding-right: 25%;
     padding-top: 1px;
@@ -79,7 +75,6 @@ header{
     border-radius: 5px;
 }
 
-
 .ttext{
     display: flex;
     justify-content: center;
@@ -94,35 +89,41 @@ span {
     border-bottom-right-radius: 10px;
 }
 
-.Text {
-    font-size: 20px;
-    color: #14245c;
+.span2{
+    border-radius: 10px;
+    padding: 5px;
 }
 
-.grid-sq{
-    padding: 20px;
+.secpart{
+    padding-left: 35px;
 }
 
-#grid{
-    padding-top: 15vh;
-    text-align: center;
+.sen{
+    display: flex;
+    justify-content: center;
     margin: auto;
 
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 50px;
-    justify-items: center;
+    color: #14245c;
+    font-size: 24px;
 }
 
-.lement{
-    padding-bottom: 20px;
-    font-size: 32px;
-    color: #14245c;
-    
-    text-decoration: underline;
-    text-decoration-color: #6F7C12;
-    text-decoration-thickness: 3px;
+img{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+
+    width: 45%;
+    height: auto;
 }
+
+.cleaning{
+    padding-bottom: 20px;
+}
+
+.list_guy{
+    padding-bottom: 75px;
+}
+
 
 .number {
     font-size: 24px;
@@ -142,18 +143,20 @@ span {
     height: auto;
 }
 
-@media (max-width: 480px) {
-    .Text {
-        font-size: 2.75vw;
-        color: #14245c;
+.menubt{
+    display: block;
+}
+
+@media (max-width: 480px){
+    img{
+        width: 100%;
+        height: auto;
     }
-    
-    #grid{
-        padding-top: 1vh;
+    .st{
+        padding-top: 10px;
     }
-    
-    .lement{
-        font-size: 2.75vh;
+    .ab{
+        padding-bottom: 15px;
     }
 
     .nav__links__left{
@@ -183,10 +186,6 @@ span {
 
     .header:hover .nav__links__left{
         display: block;
-    }
-    
-    .number{
-        position: inherent;
     }
 }
 
